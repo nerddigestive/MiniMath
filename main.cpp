@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include "Vec2.h"
+#include "MiniMath.h"
 
 void print_vec(Vec2 v);
 

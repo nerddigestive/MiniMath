@@ -8,7 +8,7 @@
 #ifndef MINIMATH_H_
 #define MINIMATH_H_
 
-#include "Vec2.h"
+#include "Vector/Vec2.h"
 
 
 
