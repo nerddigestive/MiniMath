@@ -26,7 +26,7 @@ public:
 	// Setters
 	void SetX(double x);
 	void SetY(double y);
-	void SetY(double z);
+	void SetZ(double z);
 
 	// Mathematical operators
 	Vec3 Sum(const Vec3& b);

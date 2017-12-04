@@ -52,7 +52,7 @@ void Vec3::SetY(double y) {
 	m_y = y;
 }
 
-void Vec3::SetY(double z) {
+void Vec3::SetZ(double z) {
 	m_y = z;
 }
 
