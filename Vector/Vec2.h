@@ -27,16 +27,16 @@ public:
 	void SetY(double y);
 
 	// Mathematical operators
-	Vec2 Sum(Vec2& b);
-	Vec2 Sum(Vec2 a, Vec2& b);
-	Vec2 Difference(Vec2& b);
-	Vec2 Difference(Vec2 a, Vec2& b);
-	double Dot(Vec2& b);
-	double Dot(Vec2 a, Vec2& b);
-	double Cross(Vec2& b);
-	double Cross(Vec2 a, Vec2& b);
-	Vec2 Scale(double& b);
-	Vec2 Scale(Vec2 a, double& b);
+	Vec2 Sum(const Vec2& b);
+	Vec2 Sum(Vec2 a, const Vec2& b);
+	Vec2 Difference(const Vec2& b);
+	Vec2 Difference(Vec2 a, const Vec2& b);
+	double Dot(const Vec2& b) const;
+	double Dot(const Vec2& a, const Vec2& b);
+	double Cross(const Vec2& b) const;
+	double Cross(const Vec2& a, const Vec2& b);
+	Vec2 Scale(const double& b);
+	Vec2 Scale(Vec2 a, const double& b);
 	double Magnitude();
 
 	// Logical operators

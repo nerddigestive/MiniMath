@@ -46,49 +46,49 @@ void Vec2::SetY(double y) {
 }
 
 // Mathematical operators
-Vec2 Vec2::Sum(Vec2& b) {
+Vec2 Vec2::Sum(const Vec2& b) {
 	m_x += b.GetX();
 	m_y += b.GetY();
 	return *this;
 }
 
-Vec2 Vec2::Sum(Vec2 a, Vec2& b) {
+Vec2 Vec2::Sum(Vec2 a, const Vec2& b) {
 	return a.Sum(b);
 }
 
-Vec2 Vec2::Difference(Vec2& b) {
+Vec2 Vec2::Difference(const Vec2& b) {
 	m_x -= b.GetX();
 	m_y -= b.GetY();
 	return *this;
 }
 
-Vec2 Vec2::Difference(Vec2 a, Vec2& b) {
+Vec2 Vec2::Difference(Vec2 a, const Vec2& b) {
 	return a.Difference(b);
 }
 
-double Vec2::Dot(Vec2& b) {
+double Vec2::Dot(const Vec2& b) const {
 	return (m_x * b.GetX()) + (m_y * b.GetY());
 }
 
-double Vec2::Dot(Vec2 a, Vec2& b) {
+double Vec2::Dot(const Vec2& a, const Vec2& b) {
 	return a.Dot(b);
 }
 
-double Vec2::Cross(Vec2& b) {
+double Vec2::Cross(const Vec2& b) const {
 	return (m_x * b.GetY()) - (m_y * b.GetX());
 }
 
-double Vec2::Cross(Vec2 a, Vec2& b) {
+double Vec2::Cross(const Vec2& a, const Vec2& b) {
 	return a.Cross(b);
 }
 
-Vec2 Vec2::Scale(double& b) {
+Vec2 Vec2::Scale(const double& b) {
 	m_x *= b;
 	m_y *= b;
 	return *this;
 }
 
-Vec2 Vec2::Scale(Vec2 a, double& b) {
+Vec2 Vec2::Scale(Vec2 a, const double& b) {
 	return a.Scale(b);
 }
 
